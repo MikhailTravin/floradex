@@ -1,0 +1,143 @@
+body {
+  color: var(--gray);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  padding: 0px 0px 0px 0px !important;
+  &.hide-scrollbar {
+    margin: 0px 0px 0px 0px !important;
+  }
+  .lock & {
+    overflow: hidden;
+  }
+  .popup-show & {
+    overflow: hidden;
+  }
+  .menu-open &,
+  .catalog-open &,
+  .filter-open & {
+    overflow: hidden;
+  }
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+fieldset,
+fieldset legend {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  outline: none;
+  color: currentcolor;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 2px 0 0 #6d9749,
+    0 8px 15px 0 rgba(135, 179, 98, 0.25);
+  background: var(--green);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+  line-height: 110%;
+  min-height: 44px;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 10px 44px 10px 28px;
+  transition: opacity 0.3s;
+  @media (max-width: 768px) {
+    padding: 5px 12px;
+    font-size: 11px;
+    gap: 5px;
+    min-height: 32px;
+  }
+  &:hover {
+    opacity: 0.7;
+  }
+  &.btn-white {
+    text-align: center;
+    color: #87b363;
+    box-shadow:
+      0 2px 0 0 #6d9749,
+      0 8px 15px 0 rgba(135, 179, 98, 0.25);
+    background: var(--white);
+    padding: 10px 20px;
+    @media (max-width: 768px) {
+      padding: 5px 15px;
+      min-height: 35px;
+    }
+  }
+  &.btn-border {
+    background-color: #88b06a;
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    box-shadow: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    @media (max-width: 768px) {
+      padding: 5px 15px;
+      min-height: 35px;
+      gap: 9px;
+    }
+    &:hover {
+      opacity: 1;
+      background-color: rgba(255, 255, 255, 0.39);
+    }
+  }
+  // .btn__icon
+
+  &__icon {
+    flex: 0 0 12px;
+    svg {
+      fill: var(--white);
+    }
+  }
+}
+
+.title1 {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 120%;
+  color: var(--white);
+  @media (max-width: 768px) {
+    font-size: 28px;
+    line-height: 130%;
+  }
+}
+
+.title2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 140%;
+}
+
+.block1 {
+  padding: 0px 0px 130px 0px;
+  @media (max-width: 992px) {
+    padding: 0px 0px 100px 0px;
+  }
+  @media (max-width: 768px) {
+    padding: 0px 0px 60px 0px;
+  }
+}

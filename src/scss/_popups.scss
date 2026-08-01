@@ -1,0 +1,110 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    transition: visibility 0.8s ease 0s;
+    visibility: hidden;
+    pointer-events: none;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    @media (max-width: 390px) {
+        padding: 20px 10px;
+    }
+}
+.popup_show {
+    z-index: 150;
+    visibility: visible;
+    overflow: auto;
+    pointer-events: auto;
+}
+.popup_show .popup__content {
+    visibility: visible;
+    transform: scale(1);
+}
+.popup__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    flex: 1 1 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup__content {
+    position: relative;
+    visibility: hidden;
+    transform: scale(0);
+    transition: transform 0.3s ease 0s;
+    width: 100%;
+    overflow: hidden;
+    max-width: 410px;
+    padding: 50px 50px 44px 50px;
+    border-radius: 0px 0px 10px 10px;
+    @media (max-width: 550px) {
+        padding: 50px 20px 40px 20px;
+    }
+    .lock & {
+        visibility: visible;
+    }
+}
+
+.popup__pic1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.popup-forms {
+    // .popup-forms__body
+
+    &__body {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+    }
+
+    // .popup-forms__top
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        p {
+            font-family: var(--second-family);
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 144%;
+            text-align: center;
+            color: var(--ffffff);
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+        }
+    }
+
+    // .popup-forms__title
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 111%;
+        text-align: center;
+        color: var(--ffffff);
+        @media (max-width: 768px) {
+            font-size: 26px;
+        }
+    }
+}
