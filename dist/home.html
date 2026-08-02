@@ -16,10 +16,58 @@
 
 	<body class="preload mp">
 		<div class="main-wrapper-outer">
-			=
+			<header class="header">
+				<div class="container">
+					<div class="header__content">
+						<a href="./" class="header__logo">
+							<img src="img/icons/logo1.svg" alt="">
+						</a>
+						<div class="header__body">
+							<ul>
+								<li>
+									<a href="./">О компании</a>
+								</li>
+								<li>
+									<a href="./">Каталог</a>
+								</li>
+								<li>
+									<a href="./">Дистрибьюторы</a>
+								</li>
+								<li>
+									<a href="./">Новости</a>
+								</li>
+								<li>
+									<a href="./">Технологии</a>
+								</li>
+								<li>
+									<a href="./">Контакты</a>
+								</li>
+							</ul>
+						</div>
+						<div class="header__contacts">
+							<a href="tel:79375242676" class="header__phone">+7 937 524 2676</a>
+							<a href="./" class="btn">
+								<div class="btn__icon">
+									<svg aria-hidden="true" width="12" height="12">
+										<use xlink:href="img/sprite.svg#phone"></use>
+									</svg>
+								</div>
+								<span>
+									Оставить заявку
+								</span>
+							</a>
+							<button type="button" class="header__burger">
+								<span class="icon-menu">
+									<span></span>
+								</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
 			<main class="main">
 
-				<div class="block-intro">
+				<div class="block-intro block1">
 					<div class="container">
 						<div class="block-intro__content">
 							<div class="block-intro__slider swiper">
@@ -109,14 +157,334 @@
 							</div>
 							<div class="intro-pagination pagination"></div>
 						</div>
+						<div class="block-intro-descr">
+							<div class="block-intro-descr__body">
+								<div class="block-intro-descr__column">
+									<div class="block-intro-descr__icon">
+										<img src="img/icons/icon1.svg" alt="">
+									</div>
+									<div class="block-intro-descr__item">
+										<div class="block-intro-descr__title">
+											1,1 га
+										</div>
+										<p>
+											Площадь производства
+										</p>
+									</div>
+								</div>
+								<div class="block-intro-descr__column">
+									<div class="block-intro-descr__icon">
+										<img src="img/icons/icon2.svg" alt="">
+									</div>
+									<div class="block-intro-descr__item">
+										<div class="block-intro-descr__title">
+											12
+										</div>
+										<p>
+											Производимых сорта
+										</p>
+									</div>
+								</div>
+								<div class="block-intro-descr__column">
+									<div class="block-intro-descr__icon">
+										<img src="img/icons/icon3.svg" alt="">
+									</div>
+									<div class="block-intro-descr__item">
+										<div class="block-intro-descr__title">
+											2026
+										</div>
+										<p>
+											Год запуска производства
+										</p>
+									</div>
+								</div>
+								<div class="block-intro-descr__column">
+									<div class="block-intro-descr__icon">
+										<img src="img/icons/icon4.svg" alt="">
+									</div>
+									<div class="block-intro-descr__item">
+										<div class="block-intro-descr__title">
+											2 млн +
+										</div>
+										<p>
+											Произведено роз за год
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-popular block1">
+					<div class="container">
+						<div class="block-popular__content">
+							<h2 class="title2">Популярные сорта</h2>
+							<div class="block-popular__cards">
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/image1.webp" alt="">
+									</div>
+									<div class="card-product__item">
+										<div class="card-product__titles">
+											<div class="card-product__title">София Лорен</div>
+										</div>
+										<a href="./" class="btn-more">
+											<span>Подробнее</span>
+											<div class="btn-more__arrow">
+												<svg aria-hidden="true" width="17" height="10">
+													<use xlink:href="img/sprite.svg#arrow1"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/image2.webp" alt="">
+									</div>
+									<div class="card-product__item">
+										<div class="card-product__titles">
+											<div class="card-product__title">Ред Наоми</div>
+										</div>
+										<a href="./" class="btn-more">
+											<span>Подробнее</span>
+											<div class="btn-more__arrow">
+												<svg aria-hidden="true" width="17" height="10">
+													<use xlink:href="img/sprite.svg#arrow1"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/image3.webp" alt="">
+									</div>
+									<div class="card-product__item">
+										<div class="card-product__titles">
+											<div class="card-product__title">Пенни Лейн</div>
+										</div>
+										<a href="./" class="btn-more">
+											<span>Подробнее</span>
+											<div class="btn-more__arrow">
+												<svg aria-hidden="true" width="17" height="10">
+													<use xlink:href="img/sprite.svg#arrow1"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/image4.webp" alt="">
+									</div>
+									<div class="card-product__item">
+										<div class="card-product__titles">
+											<div class="card-product__title">Мисс Пигги</div>
+										</div>
+										<a href="./" class="btn-more">
+											<span>Подробнее</span>
+											<div class="btn-more__arrow">
+												<svg aria-hidden="true" width="17" height="10">
+													<use xlink:href="img/sprite.svg#arrow1"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/image5.webp" alt="">
+									</div>
+									<div class="card-product__item">
+										<div class="card-product__titles">
+											<div class="card-product__title">Джумииля</div>
+										</div>
+										<a href="./" class="btn-more">
+											<span>Подробнее</span>
+											<div class="btn-more__arrow">
+												<svg aria-hidden="true" width="17" height="10">
+													<use xlink:href="img/sprite.svg#arrow1"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="card-product">
+									<div class="card-product__image">
+										<img loading="lazy" src="img/products/image6.webp" alt="">
+									</div>
+									<div class="card-product__item">
+										<div class="card-product__titles">
+											<div class="card-product__title">Ноелия</div>
+										</div>
+										<a href="./" class="btn-more">
+											<span>Подробнее</span>
+											<div class="btn-more__arrow">
+												<svg aria-hidden="true" width="17" height="10">
+													<use xlink:href="img/sprite.svg#arrow1"></use>
+												</svg>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-main-about block1">
+					<div class="container">
+						<div class="block-main-about__content">
+							<div class="block-main-about__body">
+								<h2 class="title2">
+									О компании Floradex
+								</h2>
+								<div class="block-main-about__text">
+									<p>
+										Тепличный комплекс «Флорадекс» объявляет о начале строительства второго павильона
+										для выращивания цветов. Это важный этап в развитии компании, который увеличит
+										производственные мощности вдвое и укрепит позиции «Флорадекс» как одного из ведущих
+										отечественных производителей свежесрезанных цветов.
+									</p>
+									<p>
+										Первый павильон уже зарекомендовал себя как образец высокотехнологичного
+										цветоводства: круглогодичное цветение, полный климат-контроль, биологическая защита
+										растений и отсутствие химических стимуляторов. Качество цветов «Флорадекс» оценили
+										флористы, свадебные салоны и оптовые покупатели — за стойкость, насыщенный цвет и
+										живую энергию, которую не встретить в импортных аналогах.
+									</p>
+									<p>
+										Второй павильон станет логичным продолжением философии компании: ещё больше света,
+										ещё больше живых красок и ещё больше доступной свежести для российского рынка.
+									</p>
+								</div>
+								<a href="./" class="btn">
+									<span>Читать полностью</span>
+								</a>
+							</div>
+							<div class="block-main-about__image">
+								<img loading="lazy" src="img/image2.webp" alt="">
+							</div>
+						</div>
 					</div>
 				</div>
 
 				<div class="block-benefits block1">
 					<div class="container">
-						<div class="block-benefits__body">
-							<div class="block-benefits__column">
+						<div class="block-benefits__content">
+							<h2 class="title2">Почему выбирают нас</h2>
+							<div class="block-benefits__body">
+								<div class="block-benefits__column">
+									<img loading="lazy" src="img/image3.webp" alt="" class="block-benefits__pic1">
+									<div class="block-benefits__item">
+										<div class="block-benefits__title">
+											Климат-контроль
+										</div>
+										<p>
+											Повседневная практика показывает, что постоянный количественный рост и сфера
+											нашей активности представляет собой интересный эксперимент 
+										</p>
+									</div>
+								</div>
+								<div class="block-benefits__column">
+									<img loading="lazy" src="img/image4.webp" alt="" class="block-benefits__pic1">
+									<div class="block-benefits__item">
+										<div class="block-benefits__title">
+											Селекция и уход
+										</div>
+										<p>
+											Повседневная практика показывает, что постоянный количественный рост и сфера
+											нашей активности представляет собой интересный эксперимент 
+										</p>
+									</div>
+								</div>
+								<div class="block-benefits__column">
+									<img loading="lazy" src="img/image5.webp" alt="" class="block-benefits__pic1">
+									<div class="block-benefits__item">
+										<div class="block-benefits__title">
+											Логистика и упаковка
+										</div>
+										<p>
+											Повседневная практика показывает, что постоянный количественный рост и сфера
+											нашей активности представляет собой интересный эксперимент 
+										</p>
+									</div>
+								</div>
+								<div class="block-benefits__column">
+									<img loading="lazy" src="img/image6.webp" alt="" class="block-benefits__pic1">
+									<div class="block-benefits__item">
+										<div class="block-benefits__title">
+											Экологичность
+										</div>
+										<p>
+											Повседневная практика показывает, что постоянный количественный рост и сфера
+											нашей активности представляет собой интересный эксперимент 
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<div class="block-main-about block-main-about2 block1">
+					<div class="container">
+						<div class="block-main-about__content">
+							<div class="block-main-about__body">
+								<h2 class="title2">
+									Технологии и качество
+								</h2>
+								<div class="block-main-about__text">
+									<p>
+										Первый павильон уже зарекомендовал себя как образец высокотехнологичного
+										цветоводства: круглогодичное цветение, полный климат-контроль, биологическая защита
+										растений и отсутствие химических стимуляторов. Качество цветов «Флорадекс» оценили
+										флористы, свадебные салоны и оптовые покупатели — за стойкость, насыщенный цвет и
+										живую энергию, которую не встретить в импортных аналогах.
+									</p>
+								</div>
+								<a href="./" class="btn">
+									<span>Читать полностью</span>
+								</a>
+							</div>
+							<div class="block-main-about__image">
+								<img loading="lazy" src="img/image7.webp" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-forms block1">
+					<div class="container">
+						<div class="block-forms__content">
+							<form action="#" class="form">
+								<div class="form__top">
+									<h2 class="title2">
+										Хотите стать партнёром?
+									</h2>
+									<p>
+										Оставьте заявку — менеджер свяжется в течение 2 часов
+									</p>
+								</div>
+								<div class="form__inputs">
+									<div class="form__input">
+										<input data-required autocomplete="off" type="text" name="form[]" placeholder="Ваше имя" class="input">
+									</div>
+									<div class="form__input">
+										<input data-required autocomplete="off" type="text" name="form[]" placeholder="Ваш телефон" class="input">
+									</div>
+									<div class="form__input">
+										<input data-required autocomplete="off" type="text" name="form[]" placeholder="Ваш email" class="input">
+									</div>
+								</div>
+								<button type="submit" class="btn btn-white">
+									<span>Отправить заявку</span>
+								</button>
+							</form>
+							<div class="block-forms__image">
+								<img loading="lazy" src="img/image8.webp" alt="">
 							</div>
 						</div>
 					</div>
@@ -127,140 +495,98 @@
 				<div class="footer-top">
 					<div class="container">
 						<div class="footer-top__content">
-							<div class="footer-top__column">
+							<div class="footer-top__left">
 								<a href="./" class="footer-top__logo">
 									<img loading="lazy" src="img/icons/logo1.svg" alt="">
 								</a>
-								<div class="footer-top__contacts">
-									<a href="tel:79966865307" class="footer-top__contact contact-phone">
-										<img loading="lazy" src="img/icons/phone2.svg" alt="">
-										<span>+7 (996) 686-53-07</span>
-									</a>
-									<a href="mailto:info@physic-solutions.ru" class="footer-top__contact">
-										<img loading="lazy" src="img/icons/mail2.svg" alt="">
-										<span>info@physic-solutions.ru</span>
-									</a>
+								<p>
+									Место где технологии встречаются с природой
+								</p>
+								<div class="footer-top__socials">
+									<div class="footer-top__socials-title">
+										Мы в соц. сетях
+									</div>
+									<div class="socials">
+										<a href="./">
+											<img loading="lazy" src="img/rutube.webp" alt="">
+										</a>
+										<a href="./">
+											<img loading="lazy" src="img/icons/vk.svg" alt="">
+										</a>
+									</div>
 								</div>
-								<div class="socials">
-									<a href="./">
-										<img loading="lazy" src="img/icons/vk.svg" alt="">
-									</a>
-									<a href="./">
-										<img loading="lazy" src="img/icons/telegramm.svg" alt="">
-									</a>
-									<a href="./">
-										<img loading="lazy" src="img/icons/watsapp.svg" alt="">
-									</a>
-									<a href="./">
-										<img loading="lazy" src="img/icons/viber.svg" alt="">
-									</a>
-								</div>
-							</div>
-							<div data-da=".footer-top__content, 768, first" class="footer-top__menu">
-								<div class="footer-top__title">
-									Каталог
-								</div>
-								<ul>
-									<li>
-										<a href="./">
-											<span data-text="Наши разработки">Наши разработки</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<span data-text="Электронные компоненты">Электронные компоненты</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<span data-text="Спец. инструмент">Спец. инструмент</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<span data-text="Изделия PEEK">Изделия PEEK</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<span data-text="Твердый сплав">Твердый сплав</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<span data-text="Товары">Товары</span>
-										</a>
-									</li>
-								</ul>
 							</div>
 							<div class="footer-top__menu">
-								<div class="footer-top__title">
-									Услуги
-								</div>
 								<ul>
 									<li>
-										<a href="./">
-											<span data-text="Спец. инструмент">Спец. инструмент</span>
-										</a>
+										<a href="./">О компании</a>
 									</li>
 									<li>
-										<a href="./">
-											<span data-text="Твердый сплав">Твердый сплав</span>
-										</a>
+										<a href="./">Каталог</a>
 									</li>
 									<li>
-										<a href="./">
-											<span data-text="Наши разработки">Наши разработки</span>
-										</a>
+										<a href="./">Дистрибьюторы</a>
 									</li>
 									<li>
-										<a href="./">
-											<span data-text="Изделия PEEK">Изделия PEEK</span>
-										</a>
+										<a href="./">Новости</a>
 									</li>
 									<li>
-										<a href="./">
-											<span data-text="Товары">Товары</span>
-										</a>
+										<a href="./">Технологии</a>
 									</li>
 									<li>
-										<a href="./">
-											<span data-text="Электронные компоненты">Электронные компоненты</span>
-										</a>
+										<a href="./">Контакты</a>
 									</li>
 								</ul>
 							</div>
-							<div class="footer-top__menu">
-								<div class="footer-top__title">
-									Меню
+							<div class="footer-contacts">
+								<div class="footer-contacts__body">
+									<div class="footer-contacts__column">
+										<div class="footer-contacts__icon">
+											<svg aria-hidden="true" width="12" height="12">
+												<use xlink:href="img/sprite.svg#phone"></use>
+											</svg>
+										</div>
+										<div class="footer-contacts__item">
+											<div class="footer-contacts__title">
+												Телефон
+											</div>
+											<div class="footer-contacts__text">
+												<a href="tel:79375242676">+7 937 524 2676</a>
+											</div>
+										</div>
+									</div>
+									<div class="footer-contacts__column">
+										<div class="footer-contacts__icon">
+											<svg aria-hidden="true" width="10" height="12">
+												<use xlink:href="img/sprite.svg#map"></use>
+											</svg>
+										</div>
+										<div class="footer-contacts__item">
+											<div class="footer-contacts__title">
+												Адрес
+											</div>
+											<div class="footer-contacts__text">
+												ул. Шоссейная, д.1А
+											</div>
+										</div>
+									</div>
+									<div class="footer-contacts__column">
+										<div class="footer-contacts__icon">
+											<svg aria-hidden="true" width="12" height="12">
+												<use xlink:href="img/sprite.svg#mail"></use>
+											</svg>
+										</div>
+										<div class="footer-contacts__item">
+											<div class="footer-contacts__title">
+												E-mail
+											</div>
+											<div class="footer-contacts__text">
+												<a href="mailto:info@floradex.ru">info@floradex.ru</a>
+											</div>
+										</div>
+									</div>
 								</div>
-								<ul>
-									<li>
-										<a href="./">
-											<span data-text="О компании">О компании</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<span data-text="Новости">Новости</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<span data-text="Контакты">Контакты</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<span data-text="Политика конфиденциальности">Политика конфиденциальности</span>
-										</a>
-									</li>
-									<li>
-										<a href="./">
-											<span data-text="Пользовательское соглашение">Пользовательское соглашение</span>
-										</a>
-									</li>
-								</ul>
+								<div id="map"></div>
 							</div>
 						</div>
 					</div>
@@ -269,11 +595,10 @@
 					<div class="container">
 						<div class="footer-bottom__content">
 							<div class="footer-bottom__copy">
-								© Physic Solutions 2026 Все права защищены
+								Floradex 2026
 							</div>
-							<div class="footer-bottom__site">
-								<span>Разработка сайта:</span>
-								<a href="./">miridea.ru</a>
+							<div class="footer-bottom__link">
+								Политика конфеденциальности
 							</div>
 						</div>
 					</div>
@@ -281,8 +606,6 @@
 			</footer>
 		</div>
 		<script src="js/swiper-8.4.7.min.js"></script>
-		<script src="js/inputmask.min.js"></script>
-		<script src="js/dynamic_adapt.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>
 
