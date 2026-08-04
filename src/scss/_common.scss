@@ -48,7 +48,7 @@ a {
   outline: none;
   color: currentcolor;
 }
-//padding: 10px 44px 10px 28px;
+
 .btn {
   display: flex;
   align-items: center;
@@ -159,7 +159,7 @@ a {
   font-weight: 700;
   font-size: 35px;
   line-height: 120%;
-  color: var(--white);
+  
   @media (max-width: 768px) {
     font-size: 28px;
     line-height: 130%;

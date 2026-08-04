@@ -1,19 +1,19 @@
 .pagination {
     position: absolute;
-    bottom: 20px !important;
+    bottom: 15px !important;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
     z-index: 5;
     .swiper-pagination-bullet {
-        width: 8px !important;
-        height: 8px;
-        flex: 0 0 8px;
+        width: 9px !important;
+        height: 9px;
+        flex: 0 0 9px;
         margin: 0px 0px 0px 0px !important;
         opacity: 1 !important;
         border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.5);
     }
     .swiper-pagination-bullet-active {
         background-color: var(--white);

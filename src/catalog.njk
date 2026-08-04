@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Каталог</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="./">
+                                Главная
+                            </a>
+                        </li>
+                        <li><span>Каталог роз</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="block-catalog block1">
+                <div class="container">
+                    <div class="block-catalog__content">
+                        <div class="block-catalog__top">
+                            <h1 class="title1">
+                                Каталог роз
+                            </h1>
+                            <div class="catalog-filter">
+                                <div class="catalog-filter__column">
+                                    <button type="button" class="catalog-filter__button">
+                                        <span>Тип</span>
+                                    </button>
+                                    <div class="catalog-filter__dropdown">
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                            <span class="checkbox__label">
+                                                <span class="checkbox__icon">
+                                                    <svg aria-hidden="true" width="11" height="9">
+                                                        <use xlink:href="img/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="checkbox__text">Одноголовые</span>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox" value="2" name="form[]">
+                                            <span class="checkbox__label">
+                                                <span class="checkbox__icon">
+                                                    <svg aria-hidden="true" width="11" height="9">
+                                                        <use xlink:href="img/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="checkbox__text">Кустовые</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="catalog-filter__column">
+                                    <button type="button" class="catalog-filter__button">
+                                        <span>Цвет</span>
+                                    </button>
+                                    <div class="catalog-filter__dropdown">
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                            <span class="checkbox__label">
+                                                <span class="checkbox__icon">
+                                                    <svg aria-hidden="true" width="11" height="9">
+                                                        <use xlink:href="img/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="checkbox__text">Белый</span>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox" value="2" name="form[]">
+                                            <span class="checkbox__label">
+                                                <span class="checkbox__icon">
+                                                    <svg aria-hidden="true" width="11" height="9">
+                                                        <use xlink:href="img/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="checkbox__text">Желтый</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-catalog__body">
+                            <div class="block-catalog__cards">
+                                <div class="card-product">
+                                    <div class="card-product__image">
+                                        <img loading="lazy" src="img/products/image2.webp" alt="">
+                                    </div>
+                                    <div class="card-product__item">
+                                        <div class="card-product__titles">
+                                            <div class="card-product__title">София Лорен</div>
+                                            <p>
+                                                Розовая
+                                            </p>
+                                        </div>
+                                        <a href="./" class="btn-more">
+                                            <span>Подробнее</span>
+                                            <div class="btn-more__arrow">
+                                                <svg aria-hidden="true" width="17" height="10">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-product__image">
+                                        <img loading="lazy" src="img/products/image1.webp" alt="">
+                                    </div>
+                                    <div class="card-product__item">
+                                        <div class="card-product__titles">
+                                            <div class="card-product__title">София Лорен</div>
+                                            <p>
+                                                Розовая
+                                            </p>
+                                        </div>
+                                        <a href="./" class="btn-more">
+                                            <span>Подробнее</span>
+                                            <div class="btn-more__arrow">
+                                                <svg aria-hidden="true" width="17" height="10">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-product__image">
+                                        <img loading="lazy" src="img/products/image2.webp" alt="">
+                                    </div>
+                                    <div class="card-product__item">
+                                        <div class="card-product__titles">
+                                            <div class="card-product__title">София Лорен</div>
+                                            <p>
+                                                Розовая
+                                            </p>
+                                        </div>
+                                        <a href="./" class="btn-more">
+                                            <span>Подробнее</span>
+                                            <div class="btn-more__arrow">
+                                                <svg aria-hidden="true" width="17" height="10">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-product__image">
+                                        <img loading="lazy" src="img/products/image3.webp" alt="">
+                                    </div>
+                                    <div class="card-product__item">
+                                        <div class="card-product__titles">
+                                            <div class="card-product__title">София Лорен</div>
+                                            <p>
+                                                Розовая
+                                            </p>
+                                        </div>
+                                        <a href="./" class="btn-more">
+                                            <span>Подробнее</span>
+                                            <div class="btn-more__arrow">
+                                                <svg aria-hidden="true" width="17" height="10">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-product__image">
+                                        <img loading="lazy" src="img/products/image3.webp" alt="">
+                                    </div>
+                                    <div class="card-product__item">
+                                        <div class="card-product__titles">
+                                            <div class="card-product__title">София Лорен</div>
+                                            <p>
+                                                Розовая
+                                            </p>
+                                        </div>
+                                        <a href="./" class="btn-more">
+                                            <span>Подробнее</span>
+                                            <div class="btn-more__arrow">
+                                                <svg aria-hidden="true" width="17" height="10">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-product__image">
+                                        <img loading="lazy" src="img/products/image4.webp" alt="">
+                                    </div>
+                                    <div class="card-product__item">
+                                        <div class="card-product__titles">
+                                            <div class="card-product__title">София Лорен</div>
+                                            <p>
+                                                Розовая
+                                            </p>
+                                        </div>
+                                        <a href="./" class="btn-more">
+                                            <span>Подробнее</span>
+                                            <div class="btn-more__arrow">
+                                                <svg aria-hidden="true" width="17" height="10">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-product__image">
+                                        <img loading="lazy" src="img/products/image5.webp" alt="">
+                                    </div>
+                                    <div class="card-product__item">
+                                        <div class="card-product__titles">
+                                            <div class="card-product__title">София Лорен</div>
+                                            <p>
+                                                Розовая
+                                            </p>
+                                        </div>
+                                        <a href="./" class="btn-more">
+                                            <span>Подробнее</span>
+                                            <div class="btn-more__arrow">
+                                                <svg aria-hidden="true" width="17" height="10">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-product">
+                                    <div class="card-product__image">
+                                        <img loading="lazy" src="img/products/image6.webp" alt="">
+                                    </div>
+                                    <div class="card-product__item">
+                                        <div class="card-product__titles">
+                                            <div class="card-product__title">София Лорен</div>
+                                            <p>
+                                                Розовая
+                                            </p>
+                                        </div>
+                                        <a href="./" class="btn-more">
+                                            <span>Подробнее</span>
+                                            <div class="btn-more__arrow">
+                                                <svg aria-hidden="true" width="17" height="10">
+                                                    <use xlink:href="img/sprite.svg#arrow1"></use>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="./" class="btn"><span>Показать еще</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-about-product block1">
+                <div class="container">
+                    <div class="block-about-product__content">
+                        <h2 class="title2">
+                            О наших розах
+                        </h2>
+                        <div class="block-about-product__text">
+                            <p>
+                                Floradex – это современный специализированный розарий, расположенный на территории
+                                промышленного парка «Вятка» в Мамадышском районе Республики Татарстан. Мы выращиваем
+                                розы
+                                высочайшего качества круглый год, используя передовые агротехнологии и лучшие достижения
+                                мировой и отечественной селекции.
+                                Наш тепличный комплекс площадью 1,1 гектара оснащен инновационным оборудованием,
+                                позволяющим
+                                производить до 40 000 роз еженедельно. Уже сейчас мы рады предложить вам первый урожай –
+                                25
+                                000 прекрасных стеблей различных сортов, собранных с 30 декабря.
+                            </p>
+                            <p>
+                                Благодаря современным
+                                тепличным технологиям мы обеспечиваем стабильные поставки роз в любое время года – это
+                                гарантия надежности для наших партнеров и клиентов.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

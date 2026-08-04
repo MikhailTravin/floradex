@@ -46,65 +46,54 @@
     transition: transform 0.3s ease 0s;
     width: 100%;
     overflow: hidden;
-    max-width: 410px;
-    padding: 50px 50px 44px 50px;
-    border-radius: 0px 0px 10px 10px;
-    @media (max-width: 550px) {
-        padding: 50px 20px 40px 20px;
-    }
+    max-width: 520px;
     .lock & {
         visibility: visible;
     }
 }
 
-.popup__pic1 {
+.popup__close {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 18;
+    img {
+        width: 15px;
+        height: auto;
+        @media (max-width: 550px) {
+            width: 12px;
+        }
+    }
+    @media (max-width: 550px) {
+        top: 10px;
+        right: 10px;
+    }
 }
 
 .popup-forms {
-    // .popup-forms__body
-
-    &__body {
-        position: relative;
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-        gap: 26px;
+    .block-forms {
+        margin: 0px 0px 0px 0px;
     }
-
-    // .popup-forms__top
-
-    &__top {
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
-        p {
-            font-family: var(--second-family);
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 144%;
-            text-align: center;
-            color: var(--ffffff);
-            @media (max-width: 768px) {
-                font-size: 16px;
-            }
+    .block-forms__content {
+        padding: 30px;
+        @media (max-width: 500px) {
+            padding: 30px 15px;
         }
     }
-
-    // .popup-forms__title
-
-    &__title {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 111%;
-        text-align: center;
-        color: var(--ffffff);
-        @media (max-width: 768px) {
-            font-size: 26px;
+    .form {
+        flex: 0 1 auto;
+        padding: 0px 0px 0px 0px;
+        .title2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
         }
     }
 }

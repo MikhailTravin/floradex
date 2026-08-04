@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Контакты</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="./">
+                                Главная
+                            </a>
+                        </li>
+                        <li><span>Контакты</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="block-contacts block1">
+                <div class="container">
+                    <div class="block-contacts__content">
+                        <div class="block-contacts-top">
+                            <div class="block-contacts-top__body">
+                                <h1 class="title1">
+                                    Контакты
+                                </h1>
+                                <div class="block-contacts-top__columns">
+                                    <div class="block-contacts-top__column">
+                                        <div class="block-contacts-top__icon">
+                                            <svg aria-hidden="true" width="22" height="21">
+                                                <use xlink:href="img/sprite.svg#phone"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="block-contacts-top__item">
+                                            <div class="block-contacts-top__title">
+                                                Телефон
+                                            </div>
+                                            <div class="block-contacts-top__text">
+                                                <a href="tel:79375242676">+7 937 524 2676</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block-contacts-top__column">
+                                        <div class="block-contacts-top__icon">
+                                            <svg aria-hidden="true" width="18" height="22">
+                                                <use xlink:href="img/sprite.svg#map"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="block-contacts-top__item">
+                                            <div class="block-contacts-top__title">
+                                                Адрес
+                                            </div>
+                                            <div class="block-contacts-top__text">
+                                                422191, Республика Татарстан,<br> г. Мамадыш, ул. Давыдова, зд. 159Б
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="block-contacts-top__column">
+                                        <div class="block-contacts-top__icon">
+                                            <svg aria-hidden="true" width="22" height="17">
+                                                <use xlink:href="img/sprite.svg#mail"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="block-contacts-top__item">
+                                            <div class="block-contacts-top__title">
+                                                E-mail
+                                            </div>
+                                            <div class="block-contacts-top__text">
+                                                <a href="mailto:info@floradex.ru">info@floradex.ru</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="map1"></div>
+                        </div>
+                        <div class="block-contacts-bottom">
+                            <div class="block-contacts-bottom__column">
+                                <div class="block-contacts-bottom__title">
+                                    Наименование юр. лица
+                                </div>
+                                <p>
+                                    ООО «Родные Края ОПТ»
+                                </p>
+                            </div>
+                            <div class="block-contacts-bottom__column">
+                                <div class="block-contacts-bottom__title">
+                                    ИНН
+                                </div>
+                                <p>
+                                    1626016016
+                                </p>
+                            </div>
+                            <div class="block-contacts-bottom__column">
+                                <div class="block-contacts-bottom__title">
+                                    ОГРН
+                                </div>
+                                <p>
+                                    1191690078117
+                                </p>
+                            </div>
+                            <div class="block-contacts-bottom__column">
+                                <div class="block-contacts-bottom__title">
+                                    КПП
+                                </div>
+                                <p>
+                                    1191690078117
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% include 'blocks/forms.njk' %}
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>
