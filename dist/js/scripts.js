@@ -175,18 +175,26 @@ if (document.querySelector('.block-intro__slider')) {
   });
 }
 
-if (document.querySelector('.block-buy__slider')) {
+const sliders = document.querySelectorAll('.block-buy__slider');
 
-  const swiperBuy = new Swiper('.block-buy__slider', {
-    observer: true,
-    observeParents: true,
-    slidesPerView: 1,
-    spaceBetween: 15,
-    speed: 800,
-    pagination: {
-      el: '.block-buy__pagination',
-      clickable: true,
-    },
+if (sliders.length) {
+  sliders.forEach((slider) => {
+    const imageBlock = slider.closest('.block-buy__image');
+    const pagination = imageBlock ? imageBlock.querySelector('.block-buy__pagination') : null;
+
+    if (pagination) {
+      new Swiper(slider, {
+        observer: true,
+        observeParents: true,
+        slidesPerView: 1,
+        spaceBetween: 15,
+        speed: 800,
+        pagination: {
+          el: pagination,
+          clickable: true,
+        },
+      });
+    }
   });
 }
 
